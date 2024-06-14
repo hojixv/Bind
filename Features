@@ -1,0 +1,105 @@
+--// full solara support btw haha hoji moment
+script_key="KEY";
+
+Kill Switch = {
+    ["Enabled"] = true, -- dtcs updates, then shuts down script
+    ["Protection"] = true,
+},
+
+TargetAim = {
+    ["KeyBind"] = Enum.KeyCode.C,
+    ["Prediction"] = 0.137,
+    ["Pred2"] = 0.11,
+    ["Parts"] = "Head",
+    ["SmoothingValue"] = 0.10,
+    ["ShakeValue"] = 0, -- up to 2
+    ["JumpOffset"] = -2.50,
+    ["CheckIfJumped"] = false
+    ["Resolver Tuning"] = 0.2,
+    ["Tracer"] = false,
+    ["Highlight"] = false,
+},
+
+Silent = {
+    ["Enabled"] = true,
+    ["Prediction"] = 0.12,
+    ["Keybind"] = "P",
+    ["Resolver"] = false,
+    ["WallCheck"] = true,
+    ["Part"] = "HumanoidRootPart",
+    ["HitPoint"] = false,
+    ["Nearest"] = true,
+    ["Resolver"] = true,
+    ["Resolver Tuning"] = 0.2,
+    ["Tracer"] = false,
+
+FieldOfView = {
+    ["FOV"] = true,
+    ["Raduis"] = 100,
+    ["FovThickness"] = 2,
+    ["FovTransparency"] = 0.7,
+    ["FovColor"] = Color3.fromRGB(255, 255, 255),
+    ["Filled"] = false,
+    ["FillTransparency"] = 0.9,
+    ["Dotted"] = false,
+    },
+},
+
+Camlock = {
+    ["KeyBind"] = Enum.KeyCode.C,
+    ["Prediction"] = 0.137,
+    ["Pred2"] = 0.11, 
+    ["Part"] = "HumanoidRootPart",
+    ["SmoothingValue"] = 0.1,
+    ["Shake"] = 0, -- up to 2
+    ["JumpOffset"] = -2.50,
+    ["JumpCheck"] = false
+    ["Resolver"] = true,
+    ["Resolver Tuning"] = 0.2,
+    ["UseCircleRadius"] = false,
+    ["UnlockOnTargetDeath"] = false,
+    ["UnlockOnOwnDeath"] = false,
+    ["UseRadius"] = false,
+
+FieldOfView = {
+    ["FOV"] = true,
+    ["Raduis"] = 100,
+    ["FovThickness"] = 2,
+    ["FovTransparency"] = 0.7,
+    ["FovColor"] = Color3.fromRGB(255, 255, 255),
+    ["Filled"] = false,
+    ["FillTransparency"] = 0.9,
+    ["Dotted"] = false,
+},
+
+
+Visualize = {
+        ["ShowHitPoint"] = false,
+        ["HitPointRadius"] = 8,
+        ["HitPointThickness"] = 2,
+        ["HitPointColor"] = Color3.fromRGB(255, 0, 0),
+        ["HitPointTransparency"] = 1,
+        ["HitPart"] = false,
+        ["Visualize Box"] = false,
+    },
+},
+
+Memory = {
+    ["MemSpoofer"] = true,
+    ["Start"] = 1137,
+    ["End"] = 1564,
+},
+
+Check = {
+    ["DisableOnTargetDeath"] = true,
+    ["DisableOnPlayerDeath"] = true,
+    ["CheckIfKo"]= true,
+    ["ResolverKey"] = Enum.KeyCode.G,
+    ["UseClosestPart"] = false,
+},
+
+Key360 = {
+    ["Enabled"] = true,
+    ["RotationSpeed"] = 2500, 
+    ["Keybind"] = Enum.KeyCode.V,
+},
