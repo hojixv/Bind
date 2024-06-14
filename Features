@@ -20,6 +20,40 @@ TargetAim = {
     ["Highlight"] = false,
 },
 
+Bind = {
+    Target = {
+        ["Enabled"] = ( true ),
+        ["Keybind"] = ( "c" ),
+        ["Prediction"] = ( 0.138 ),
+        ["Part"] = ( "HumanoidRootPart" ),
+
+        ["Spectate"] = false,
+        ["LookAt"] = true,
+
+        ["Resolver"] = false,
+        ["ResolverTune"] = 0.138,
+
+        ["TargetStrafe"] = false,
+        ["StrafeRadius"] = 10,
+        ["StrafeSpeed"] = 5,
+        ["StrafeHeight"] = 0,
+
+        ["Notify"] = true,
+
+        Drawings = {
+            ["Tracer"] = true,
+            ["Color"] = Color3.fromRGB(255,255,255),
+            ["Thickness"] = 1,
+            ["Transparency"] = 1,
+        },
+    },
+    Misc = {
+        ["CFrame"] = true,
+        ["CFrameKey"] = "z",
+        ["CFrameSpeed"] = 1,
+    }
+}
+
 Silent = {
     ["Enabled"] = true,
     ["Prediction"] = 0.12,
