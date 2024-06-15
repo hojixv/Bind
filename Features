@@ -1,58 +1,24 @@
---// full solara support btw haha hoji moment
-script_key="KEY";
-
 Kill Switch = {
     ["Enabled"] = true, -- dtcs updates, then shuts down script
     ["Protection"] = true,
+    ["Bind"] = "V1" 
 },
 
 TargetAim = {
-    ["KeyBind"] = Enum.KeyCode.C,
+    ["KeyBind"] = "C",
     ["Prediction"] = 0.137,
-    ["Pred2"] = 0.11,
     ["Parts"] = "Head",
-    ["SmoothingValue"] = 0.10,
-    ["ShakeValue"] = 0, -- up to 2
-    ["JumpOffset"] = -2.50,
+    ["Shake"] = 0, 
+    ["JumpPrediction"] = -2.50,
     ["CheckIfJumped"] = false
     ["Resolver Tuning"] = 0.2,
+    ["Smoothing"] = 0.10,
     ["Tracer"] = false,
     ["Highlight"] = false,
-},
-
-Bind = {
-    Target = {
-        ["Enabled"] = ( true ),
-        ["Keybind"] = ( "c" ),
-        ["Prediction"] = ( 0.138 ),
-        ["Part"] = ( "HumanoidRootPart" ),
-
-        ["Spectate"] = false,
-        ["LookAt"] = true,
-
-        ["Resolver"] = false,
-        ["ResolverTune"] = 0.138,
-
-        ["TargetStrafe"] = false,
-        ["StrafeRadius"] = 10,
-        ["StrafeSpeed"] = 5,
-        ["StrafeHeight"] = 0,
-
-        ["Notify"] = true,
-
-        Drawings = {
-            ["Tracer"] = true,
-            ["Color"] = Color3.fromRGB(255,255,255),
-            ["Thickness"] = 1,
-            ["Transparency"] = 1,
-        },
-    },
-    Misc = {
-        ["CFrame"] = true,
-        ["CFrameKey"] = "z",
-        ["CFrameSpeed"] = 1,
-    }
-}
+    ["LookAt"] = false,
+    ["Stats"] = false,
+    ["Box"] = false, -- bugged on solara
+}, 
 
 Silent = {
     ["Enabled"] = true,
@@ -66,6 +32,7 @@ Silent = {
     ["Resolver"] = true,
     ["Resolver Tuning"] = 0.2,
     ["Tracer"] = false,
+    ["Air Prediction"] = 0.123,
 
 FieldOfView = {
     ["FOV"] = true,
@@ -80,12 +47,12 @@ FieldOfView = {
 },
 
 Camlock = {
-    ["KeyBind"] = Enum.KeyCode.C,
+    ["KeyBind"] = "C",
     ["Prediction"] = 0.137,
     ["Pred2"] = 0.11, 
     ["Part"] = "HumanoidRootPart",
     ["SmoothingValue"] = 0.1,
-    ["Shake"] = 0, -- up to 2
+    ["Shake"] = 0, 
     ["JumpOffset"] = -2.50,
     ["JumpCheck"] = false
     ["Resolver"] = true,
@@ -94,6 +61,8 @@ Camlock = {
     ["UnlockOnTargetDeath"] = false,
     ["UnlockOnOwnDeath"] = false,
     ["UseRadius"] = false,
+    ["Air Smoothing"] = 0.1,
+    ["Air Prediction"] = 0.123,
 
 FieldOfView = {
     ["FOV"] = true,
@@ -108,12 +77,12 @@ FieldOfView = {
 
 
 Visualize = {
-        ["ShowHitPoint"] = false,
-        ["HitPointRadius"] = 8,
-        ["HitPointThickness"] = 2,
-        ["HitPointColor"] = Color3.fromRGB(255, 0, 0),
-        ["HitPointTransparency"] = 1,
-        ["HitPart"] = false,
+        ["ShowBonePart"] = false,
+        ["BonePartRadius"] = 8,
+        ["BonePartThickness"] = 2,
+        ["BonePartColor"] = Color3.fromRGB(255, 0, 0),
+        ["BonePartTransparency"] = 1,
+        ["BonePart"] = false,
         ["Visualize Box"] = false,
     },
 },
@@ -128,12 +97,14 @@ Check = {
     ["DisableOnTargetDeath"] = true,
     ["DisableOnPlayerDeath"] = true,
     ["CheckIfKo"]= true,
-    ["ResolverKey"] = Enum.KeyCode.G,
+    ["ResolverKey"] = "H",
     ["UseClosestPart"] = false,
+    ["Hide Game"] = false, 
+    ["Mode"] = "legit", --// legit blatant
 },
 
 Key360 = {
     ["Enabled"] = true,
     ["RotationSpeed"] = 2500, 
-    ["Keybind"] = Enum.KeyCode.V,
+    ["Keybind"] = "C",
 },
