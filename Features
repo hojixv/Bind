@@ -1,14 +1,95 @@
+--// Silent Fully Bypasses + more protection incase dahood patches
+--// Hoodcustoms support
+--// Fake Dahood Support
+--// More Protection
+
 Kill Switch = {
     ["Enabled"] = true, -- dtcs updates, then shuts down script
-    ["Protection"] = true,
-    ["Bind"] = "V1" 
+    ["Protection"] = true, -- 
+    ["Bind"] = "V1"     
+}
+Intro = {
+    ["IntroBlur"] = true,
+}     
+
+Silent = {
+    ["Enabled"] = true,
+    ["Prediction"] = 0.12,
+    ["Keybind"] = "P",
+    ["WallCheck"] = true,
+    ["Visualize"] =
+    ["Part"] = "HumanoidRootPart",
+    ["HitPoint"] = false,
+    ["Nearest"] = true,
+    ["Resolver"] = true,
+    ["Resolver Tuning"] = 0.2,
+    ["Tracer"] = false,
+    ["Air Prediction"] = 0.123,
+    ["PredictMovement"] = false,
+    ["ShowMovement"] = false,
+    ["Factors"] = 1,
+    
+FieldOfView = {
+    ["FOV"] = true,
+    ["UseFOV"] = false,
+    ["Raduis"] = 100,
+    ["FovThickness"] = 2,
+    ["FovTransparency"] = 0.7,
+    ["FovColor"] = Color3.fromRGB(255, 255, 255),
+    ["Filled"] = false,
+    ["FillTransparency"] = 0.9,
+    ["Dotted"] = false,
+    ["ShowDots"] = false,
+    ["Rainbow"] = false,
+    ["DotSize"] = 2,
+    ["Radius"] = 150,
+    ["Color"] = Color3.fromRGB(255, 255, 255)
+    },
+},
+
+Camlock = {
+    ["KeyBind"] = "C",
+    ["Prediction"] = 0.123,
+    ["PredX"] = 0.123,
+    ["PredY"] = 0.123, 
+    ["Part"] = "HumanoidRootPart",
+    ["SmoothingValue"] = 0.1,
+    ["Shake"] = 0, 
+    ["Offset"] = -2.50,
+    ["AirCheck"] = false
+    ["Resolver"] = true,
+    ["Resolver Tuning"] = 0.2,
+    ["UseCircleRadius"] = false,
+    ["UnlockOnTargetDeath"] = false,
+    ["UnlockOnOwnDeath"] = false,
+    ["UseRadius"] = false,
+    ["Air Smoothing"] = 0.1,
+    ["Air Prediction"] = 0.123,
+    ["Head Prediction"] = false,
+}
+FieldOfView = {
+    ["FOV"] = true,
+    ["Raduis"] = 100,
+    ["UseFOV"] = false,
+    ["FovThickness"] = 2,
+    ["FovTransparency"] = 0.7,
+    ["FovColor"] = Color3.fromRGB(255, 255, 255),
+    ["Filled"] = false,
+    ["FillTransparency"] = 0.9,
+    ["Dotted"] = false,
+    ["ShowDots"] = false,
+    ["Rainbow"] = false,
+    ["DotSize"] = 2,
+    ["Radius"] = 150,
+    ["Color"] = Color3.fromRGB(255, 255, 255)
 },
 
 TargetAim = {
     ["KeyBind"] = "C",
     ["Prediction"] = 0.137,
-    ["Parts"] = "Head",
-    ["Shake"] = 0, 
+    ["PredX"] = 0.1,
+    ["PredY"] = 0.1,
+    ["Parts"] = "Head", 
     ["JumpPrediction"] = -2.50,
     ["CheckIfJumped"] = false
     ["Resolver Tuning"] = 0.2,
@@ -18,63 +99,27 @@ TargetAim = {
     ["LookAt"] = false,
     ["Stats"] = false,
     ["Box"] = false, -- bugged on solara
-}, 
+    ["UseCustomPrediction"] = false,
+    ["AimAt"] = false,
 
-Silent = {
-    ["Enabled"] = true,
-    ["Prediction"] = 0.12,
-    ["Keybind"] = "P",
-    ["Resolver"] = false,
-    ["WallCheck"] = true,
-    ["Part"] = "HumanoidRootPart",
-    ["HitPoint"] = false,
-    ["Nearest"] = true,
-    ["Resolver"] = true,
-    ["Resolver Tuning"] = 0.2,
-    ["Tracer"] = false,
-    ["Air Prediction"] = 0.123,
-
-FieldOfView = {
-    ["FOV"] = true,
-    ["Raduis"] = 100,
-    ["FovThickness"] = 2,
-    ["FovTransparency"] = 0.7,
-    ["FovColor"] = Color3.fromRGB(255, 255, 255),
-    ["Filled"] = false,
-    ["FillTransparency"] = 0.9,
-    ["Dotted"] = false,
-    },
-},
-
-Camlock = {
+Rage = {
     ["KeyBind"] = "C",
     ["Prediction"] = 0.137,
-    ["Pred2"] = 0.11, 
-    ["Part"] = "HumanoidRootPart",
-    ["SmoothingValue"] = 0.1,
-    ["Shake"] = 0, 
-    ["JumpOffset"] = -2.50,
-    ["JumpCheck"] = false
+    ["Target"] = false,
+    ["TargetStafe"] = false,
+        
+    ["SpeedT"] = 10, -- speed
+    ["StrafeT"] = 10,
+    ["StrafeH"] = 10,
+    ["StrafeR"] = 10,
+    
     ["Resolver"] = true,
-    ["Resolver Tuning"] = 0.2,
-    ["UseCircleRadius"] = false,
-    ["UnlockOnTargetDeath"] = false,
-    ["UnlockOnOwnDeath"] = false,
-    ["UseRadius"] = false,
-    ["Air Smoothing"] = 0.1,
-    ["Air Prediction"] = 0.123,
-
-FieldOfView = {
-    ["FOV"] = true,
-    ["Raduis"] = 100,
-    ["FovThickness"] = 2,
-    ["FovTransparency"] = 0.7,
-    ["FovColor"] = Color3.fromRGB(255, 255, 255),
-    ["Filled"] = false,
-    ["FillTransparency"] = 0.9,
-    ["Dotted"] = false,
-},
-
+    ["ResolverTuning"]  = 0.3
+    ["ResolverMode"] = "Recalculate"  -- MoveDirection
+    ["ResolverX"] = false,
+    ["ResolverY"] = false,
+    }, 
+}, 
 
 Visualize = {
         ["ShowBonePart"] = false,
@@ -84,16 +129,17 @@ Visualize = {
         ["BonePartTransparency"] = 1,
         ["BonePart"] = false,
         ["Visualize Box"] = false,
+        ["Tracer"] = false,
     },
-},
 
 Memory = {
     ["MemSpoofer"] = true,
     ["Start"] = 1137,
     ["End"] = 1564,
+    ["Legit"] = "Mode" -- mode "blatant" "legit"
 },
 
-Check = {
+CheckBoth = {
     ["DisableOnTargetDeath"] = true,
     ["DisableOnPlayerDeath"] = true,
     ["CheckIfKo"]= true,
@@ -101,10 +147,24 @@ Check = {
     ["UseClosestPart"] = false,
     ["Hide Game"] = false, 
     ["Mode"] = "legit", --// legit blatant
+    ["VisualCheck"] = true,
+    ["LegitCheck"] = false,
 },
 
 Key360 = {
     ["Enabled"] = true,
     ["RotationSpeed"] = 2500, 
     ["Keybind"] = "C",
+    ["Multiply"] = 2,
+    ["UseMath"] = false,
+
+},
+
+Esp = {
+    ["Enabled"] = false,
+    ["EspKeyBind"] = "P",
+    ["Health"] = false,
+    ["Name"] = false,
+    ["HealthText"] = false,
+    ["DistanceStud"] = false,
 },
